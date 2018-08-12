@@ -3,11 +3,11 @@ def pair_sum(arr, total):
     valid_pairs = []
     num = 0
     for ele in arr:
-        if ele in pairs:
-            valid_pairs.append([ele, pairs[ele]])
+        if (total - ele) in pairs:
+            valid_pairs.append([total - ele, pairs[total - ele]])
             num += 1
         else:
-            pairs[total - ele] = (ele)
+            pairs[ele] = (total - ele)
 
     print(num, valid_pairs)
 
