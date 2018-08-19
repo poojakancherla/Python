@@ -1,15 +1,15 @@
-class Node(object):
+class SinglyLinkedListNode(object):
     def __init__(self, value):
         self.value = value
-        self.nextnode = None
+        self.next_node = None
 
-a = Node(1)
-b = Node(2)
-c = Node(3)
+a = SinglyLinkedListNode(1)
+b = SinglyLinkedListNode(2)
+c = SinglyLinkedListNode(3)
 
-a.nextnode = b
-b.nextnode = c
+a.next_node = b
+b.next_node = c
 
 print(a.value)
-print(a.nextnode)
+print(a.next_node)
 print(b.value)
