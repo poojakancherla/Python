@@ -6,6 +6,7 @@ class SinglyLinkedListNode(object):
     def reverse(head):
         curr = head
         previous, next = None, None
+
         while curr:
             next = curr.next_node
             curr.next_node = previous

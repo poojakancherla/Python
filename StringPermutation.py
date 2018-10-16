@@ -12,4 +12,20 @@ def permute(s):
                 output += [s[i] + perm]
     return output
 
-print(permute('abc'))
+# print(permute('abc'))
+
+def rem(s, i):
+    s1 = list(s)
+    s1.remove(i)
+    s2 = "".join(s1)
+
+
+def permute2(s):
+    output = []
+    if len(s) == 1:
+        return s
+    else:
+        for i in s:
+            output += i + permute2(rem(s, i))
+
+print(permute2("abc"))
