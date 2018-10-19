@@ -15,4 +15,4 @@ def compress(s):
                 curr = i
     return s_compress +curr + str(count)
 
-print(compress("My name is Pooja"))
+print(compress(""))
