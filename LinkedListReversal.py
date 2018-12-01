@@ -15,6 +15,8 @@ class SinglyLinkedListNode(object):
 
         return previous
 
+    def printt(self, a):
+        print(89)
 # Testing the Solution
 
 # Create a list of 4 nodes
@@ -33,7 +35,8 @@ print (c.next_node.value)
 
 
 SinglyLinkedListNode.reverse(a)
-
+f = SinglyLinkedListNode(19)
+f.printt(100)
 # Check if the Linked List is reversed
 print (d.next_node.value)
 print (c.next_node.value)
